@@ -2,6 +2,10 @@ section {
   position: relative;
   width: 100%;
   background-size: cover;
+  p.subhead {
+    margin: 15px auto;
+    font-size: 19px;
+  }
 }
 
 .hr {
@@ -45,4 +49,65 @@ section {
 .section-help {
   padding: 60px 0;
   text-align: center;
+  .h3 {
+    margin: 20px auto;
+  }
+  p {
+    color: #ECECEC;
+  }
+}
+
+.help-wrapper {
+  margin-top: 20px;
+}
+
+.help-item {
+  position: relative;
+  margin-top: 30px;
+  padding: 0 30px;
+  &:not(:last-child)::after {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 1px;
+    height: 60%;
+    background-color: #262626;
+    content: '';
+  }
+}
+
+.section-features {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  .h2 {
+    display: inline-block;
+    padding-top: 60px;
+    border-top: 1px solid #262626;
+  }
+  .h4 {
+    margin-bottom: 15px;
+  }
+  p {
+    color: #fff;
+    font-size: 17px;
+    opacity: .8;
+  }
+  .button {
+    margin-top: 50px;
+  }
+}
+
+.feature-item {
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
+.feature-item__icon {
+  float: left;
+  margin-right: 25px;
+}
+
+.feature-item__text {
+  display: block;
+  overflow: hidden;
 }
