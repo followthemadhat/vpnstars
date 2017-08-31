@@ -1,0 +1,48 @@
+section {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.hr {
+  margin: 30px auto;
+  width: 100px;
+  height: 1px;
+  background-color: $primary;
+}
+
+.section-hero {
+  min-height: 750px;
+  height: 100vh;
+  background-position: center;
+  text-align: center;
+  .subhead {
+    margin: 30px auto;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+}
+
+.hero-wrap {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -45%);
+  .button {
+    padding: 15px 45px;
+    font-size: 16px;
+  }
+  .inverse {
+    margin-left: 15px;
+  }
+}
+
+.apps {
+  margin-top: 40px;
+}
+
+.section-help {
+  padding: 60px 0;
+  text-align: center;
+}

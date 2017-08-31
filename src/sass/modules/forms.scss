@@ -1,0 +1,31 @@
+/* Placeholder styles */
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  color: #666;
+}
+
+input:required:valid,
+textarea:required:valid {
+  color: #666;
+}

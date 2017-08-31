@@ -1,0 +1,39 @@
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  &.active {
+    display: block;
+    background-color: rgba(0, 0, 0, .5);
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  display: none;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  &.active {
+    display: flex;
+  }
+}
+
+.popup-body {
+  position: relative;
+  z-index: 102;
+  width: 100%;
+}
+
+.popup-close {
+  position: absolute;
+}

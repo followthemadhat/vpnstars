@@ -1,0 +1,47 @@
+.main-header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  padding-top: 25px;
+
+  align-items: bottom center;
+  justify-content: space-between;
+
+}
+
+.main-menu {
+  ul {
+    display: inline-block;
+    font-size: 15px;
+  }
+  li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .button {
+    color: #000;
+  }
+  .login {
+    position: relative;
+    margin-left: 20px;
+    color: $primary;
+    text-transform: uppercase;
+    &::after {
+      position: absolute;
+      top: 3px;
+      left: -20px;
+      width: 1px;
+      height: 80%;
+      background-color: #828282;
+      content: '';
+    }
+  }
+}

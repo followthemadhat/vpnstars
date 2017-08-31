@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid $primary;
+  border-radius: 30px;
+  background-color: $primary;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .25s ease;
+  &.inverse {
+    background-color: transparent;
+    color: $primary;
+    &:hover {
+      background-color: $primary;
+      color: #000;
+    }
+  }
+  &:hover {
+    background-color: transparent;
+    color: $primary;
+    text-decoration: none;
+  }
+}
