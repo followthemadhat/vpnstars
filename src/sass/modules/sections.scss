@@ -267,3 +267,91 @@ section {
 .section-reviews {
   padding: 60px 0;
 }
+
+.reviews-wrapper {
+  margin: 60px 0;
+
+  justify-content: space-between;
+}
+
+.review-item {
+  padding: 30px;
+  max-width: 340px;
+  width: 30%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0.5px 0.9px 5.6px 0.4px rgba(0, 0, 0, 0.17);
+  color: #000;
+  text-align: center;
+}
+
+.review-item__name {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.review-item__title {
+  color: #DEB60F;
+  font-size: 15px;
+}
+
+.review-item__quote {
+  position: relative;
+  margin-top: 30px;
+  font-size: 15px;
+  &::before {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/quote.png);
+    background-size: initial;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
+
+.stripe-social {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.social-item {
+  position: relative;
+  padding: 10px 60px;
+  text-align: center;
+  &:not(:last-child)::after {
+    position: absolute;
+    top: 3px;
+    right: -20px;
+    width: 1px;
+    height: 80%;
+    background-color: #2a2a2a;
+    content: '';
+  }
+  a {
+    color: $primary;
+    font-weight: 400;
+  }
+  i {
+    font-size: 40px;
+  }
+}
+
+.social-item__icon {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.social-item__text {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: 300;
+  font-size: 18px;
+}
