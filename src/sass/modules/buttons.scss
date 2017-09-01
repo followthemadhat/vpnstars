@@ -9,6 +9,9 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all .25s ease;
+  &.button-small {
+    padding: 10px 30px;
+  }
   &.inverse {
     background-color: transparent;
     color: $primary;
